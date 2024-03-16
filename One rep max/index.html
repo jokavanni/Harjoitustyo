@@ -1,36 +1,83 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="h-100">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="../CSS/style.css">
-    <title>One rep max</title>
+    <title>One Rep Max</title>
 </head>
 <body>
-    <div id="navbar">
-        <ul>
-            <li><a href="../index.html">Training planner</a></li>
-            <li><a href="../Workout diary/index.html">Workout diary</a></li>
-        </ul>
-    </div>
-    <h1>Calculate your one rep max</h1>
-    <form>
-        <div>
-            <label>Exercise</label>
-            <input id="maxexercise"/>
+    <div class="container">
+        <header class="d-flex justify-content-center align-items-center">
+            <div class="image-wrapper">
+                <img class="img-fluid " src="../images/puntti.png" alt="puntti"/>
+            </div>
+            <h1 class=" justify-content-center align-items-center">TRAINING PLANNER</h1> 
+            <div class="image-wrapper">
+                <img class="img-fluid " src="../images/puntti.png" alt="puntti"/>
+            </div>
+        </header>
+        <nav class="navbar navbar-expand-md navbar-light bg-dark">
+            <div class="container p-1 justify-content-center align-items-center">
+                <button class="navbar-toggler bg-warning" type="button" 
+                data-bs-toggle="collapse" 
+                data-bs-target="#mainmenu" 
+                aria-controls="navbarSupportedContent" 
+                aria-expanded="false" 
+                aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse p-1 navbar-collapse justify-content-center align-items-center" id="mainmenu">
+                    <ul class="navbar-nav justify-content-center align-items-center">
+                    <li class="nav-item"><a class="nav-link text-light" href="../index.html">Training planner</a></li>
+                    <li class="nav-item"><a class="nav-link text-warning" href="#">One rep max</a></li>
+                    <li class="nav-item"><a class="nav-link text-light" href="../Workout diary/index.html">Workout diary</a></li>
+                    </ul>
+                  </div>
+                </div>
+        </nav>
+        <form>
+            <h2 class="mt-3 p-3">Calculate Your One Rep Max</h2>
+           <!-- <div class="row mt-3"> -->
+                <!-- <label for="exercise" class="col-md-3 col-form-label">Exercise</label>
+                <div class="col-md-9">
+                    <input type="text" class="form-control" id="maxexercise"/>
+                </div> 
+            </div>  -->
+        <div class="row mt-3 mb-3">
+            <label for="maxweight" class="col-md-3 col-form-label">Weight</label>
+            <div class="col-md-9">
+                <input type="number" class="form-control" id="maxweight">
+            </div>
         </div>
-        <div>
-            <label>Weight</label>
-            <input id="maxweight" type="number">
+        <div class="row mt-3 mb-3">
+            <label for="maxreps" class="col-md-3 col-form-label">Reps</label>
+            <div class="col-md-9">
+                <input type="number" class="form-control" id="maxreps">
+            </div>
         </div>
-        <div>
-            <label>Reps</label>
-            <input id="maxreps" type="number">
+        <button type="button" class="btn btn-primary">Calculate</button>
+        <div class="row mt-3 mb-3">
+            <label for="onerepmax" class="col-md-3 col-form-label">One rep max</label>
+            <div class="col-md-9">
+                <input type="number" class="output" id="onerepmax">
+            <output></output>
         </div>
-        <button type="button">Calculate</button>
         </form>
-        <table>
-        </table>
-    <script src="./JS/functions.js"></script>
+                    <table>
+                    </table>
+        </div>
+    <footer class="footer mt-5 p-3 bg-dark justify-content-center align-items-center">
+        <div class="container justify-content-center align-items-center">
+        <div class="d-flex justify-content-center align-items-center"></div>
+          <p class="col-md-4 text-light">Footer area 1</p>
+          <p class="col-md-4 text-light">Footer area 3</p>
+          <p class="col-md-4 text-light">Footer area 2</p>
+        </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="../JS/functions.js"></script>
 </body>
 </html>
