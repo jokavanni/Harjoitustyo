@@ -1,8 +1,9 @@
-const button = document.querySelector('button')
-const maxweight = document.querySelector('maxweight')
-const maxreps = document.querySelector('maxreps')
+const button = document.querySelector('#button')
+const input_maxweight = document.querySelector('#maxweight').value
+const input_maxreps = document.querySelector('#maxreps').value
 const output = document.querySelector('output')
 button.addEventListener('click', () => {
-const onerepmax = maxweight / ( 1.0278 - 0.0278 * maxreps ) 
+const onerepmax = maxweight.value / (1.0278 - (0.0278 * maxreps.value)) 
 output.innerHTML = onerepmax.toFixed(2) + "kg"
 }) 
+

@@ -1,13 +1,23 @@
 body {
-    background-color: #F6EC95;
-    margin: 2em;
+    background-color: #73FC77;
+    margin: 3em;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
 }
 
-
-h1, h2 {
+h2, h3, .h4, .h5 {
     font-weight: bold;
+}
+
+.navbar-nav  {
+    font-weight: bold;
+    font-size: large;
+}
+
+
+label, #maxweight, #maxreps, #onerepmax {
+    font-weight: bold;
+    font-size: large;
 }
 
 form {
@@ -17,14 +27,6 @@ form {
    
 }
 
-div {
-    
-}
-
-label {
-    font-weight: bold;
-}
-
 input {
     margin-left: 1em;
     padding: 5px;
@@ -32,17 +34,6 @@ input {
     font-family: 'Times New Roman', Times, serif;
 }
 
-#date, #sets, #reps, #weight {
-width: 50px;
-}
-
-button {
-    align-self: start;
-    margin: 1em;
-    padding: 0.5em 1em;
-    background-color: #EBA0FD;
-    color: black;
-    border: 2px solid #2C0597;
-    border-radius: 12px;
-    font-weight: bold;
+p {
+    font-size: large;
 }

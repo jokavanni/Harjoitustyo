@@ -4,14 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="./CSS/style.css">
-    <title>Hard Core Training</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <title>Training Planner</title>
 </head>
-
 <body>
     <div class="row">
         <header class="d-flex justify-content-center align-items-center mb-5">
-            <img class="img-fluid" src="./images/logo.png" alt="logo" id="logo"/>
+            <img class="img-fluid" src="../images/logo.png" alt="logo" id="logo"/>
         </header>
 
         <nav class="navbar navbar-expand-md navbar-light bg-dark">
@@ -26,40 +25,41 @@
                 </button>
                 <div class="collapse p-1 navbar-collapse justify-content-center align-items-center" id="mainmenu">
                     <ul class="navbar-nav justify-content-center align-items-center">
-                    <li class="nav-item mx-5"><a class="nav-link text-danger" href="#">Hard Core Training</a></li>
-                    <li class="nav-item mx-5"><a class="nav-link text-light" href="./Training Planner/index.html">Training Planner</a></li>
-                    <li class="nav-item mx-5"><a class="nav-link text-light" href=".//One Rep Max/index.html">One Rep Max</a></li>
+                    <li class="nav-item mx-5"><a class="nav-link text-light" href="../index.html">Hard Core Training</a></li>
+                    <li class="nav-item mx-5"><a class="nav-link text-danger" href="#">Training Planner</a></li>
+                    <li class="nav-item mx-5"><a class="nav-link text-light" href="../One Rep Max/index.html">One Rep Max</a></li>
                     </ul>
                   </div>
             </div>
         </nav>
 
-        <div class="row">
+
+        <form class="d-flex justify-content-center align-items-center">
+            <h2 class="m-3">Training Planner</h2>
             <div>
-                <h3 class="mt-5 text-center">Welcome to Hard Core Training,</h3>
-                <h3 class="text-center"> your ultimate destination for maximizing your fitness potential and achieving your goals !</h3>
+                <label>Date</label>
+                <input id="date"/>
             </div>
-            <div class="row m-3">
-                <p class="h5 p-2 text-center">At Hard Core Training, we believe in pushing boundaries, breaking limits, and sculpting the strongest version of yourself. Whether you're a seasoned athlete or just beginning your fitness journey, our comprehensive platform provides the tools and resources you need to excel.</p>
-                <p class="h5 p-2 text-center">Our innovative training planner empowers you to design personalized workout routines tailored to your specific needs and objectives. From strength training to cardiovascular exercises, our planner offers flexibility and customization to accommodate every fitness level and goal. Whether you're aiming to build muscle, lose weight, or enhance endurance, our intuitive interface makes crafting the perfect workout regimen effortless.</p>
-                <p class="h5 p-2 text-center">But we don't stop there. Hard Core Training goes beyond basic workout planning. With our one-rep max calculator, you can accurately determine your maximum lifting capacity, allowing you to optimize your strength training routine and track your progress over time.</p> 
-                <div class="d-flex justify-content-center align-items-center">
-                <p class="h4 p-3 col-md-4 text-center">Join the Hard Core Training community today and unlock your full potential.</p> 
-                </div>
-                <div class="d-flex justify-content-center align-items-center">
-                <img class="img-fluid col-md-1" src="../images/puntti.png" alt="puntti"/>
-                </div>
-                <div class="d-flex justify-content-center align-items-center">
-                <p class="h4 p-3 col-md-4 text-center">Embrace the challenge, embrace the grind, and redefine what's possible with Hard Core Training. </p>
-                </div>
-                <div class="d-flex justify-content-center align-items-center">
-                <img class="img-fluid col-md-1" src="../images/puntti.png" alt="puntti"/>
-                </div>
-                <div class="d-flex justify-content-center align-items-center">
-                <p class="h4 p-3 col-md-4 text-center">Your journey to peak performance starts here.</p>
-                </div>
-            </div>
+        <div>
+            <label>Exercise</label>
+            <input id="exercise"/>
         </div>
+        <div>
+            <label>Sets</label>
+            <input id="sets" type="number"/>
+        </div>
+        <div>
+            <label>Reps</label>
+            <input id="reps" type="number">
+        </div>
+        <div>
+            <label>Weight</label>
+            <input id="weight" type="number">
+        </div>
+        <button type="button">Save</button>
+        </form>
+        <table>
+        </table>
 
         <footer class="footer d-flex justify-content-center align-items-center bg-dark">
             <div class="column m-4 text-light">
@@ -95,7 +95,7 @@
         </div>
     </div>
 
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    <script src="./JS/functions.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="../JS/functions.js"></script>
 </body>
 </html>
